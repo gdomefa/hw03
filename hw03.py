@@ -58,7 +58,19 @@ def pick_averaging_method():
     Any other input prints
     'Error in pick_averaging_method: incorrect option picked'.
     """
-    pass
+    user_choice = input(print("Pick 'a' for mean, 'b' for median, 'c' for mode: "))
+    if user_choice == "a":
+        print("picked: Mean")
+        avg = statistics.mean(grades)
+    if user_choice == "b":
+        print("picked: Median")
+        avg = statistics.median(grades)
+    if user_choice == "c":
+        print("picked: Mode")
+        avg = statistics.mode(grades)
+    else:
+        print("Error in pick_averaging_method: incorrect option picked")
+        exit()
 
 # Task 3:
 #  Complete the function "pick_visualization" below:
@@ -71,6 +83,7 @@ def pick_visualization(average):
     Any other input prints
     'Error in pick_visualization: incorrect option picked'.
     """
+    
     pass
 
 
