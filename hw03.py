@@ -72,6 +72,7 @@ def pick_averaging_method():
     else:
         print("Error in pick_averaging_method: incorrect option picked")
         exit()
+    return avg
 
 # Task 3:
 #  Complete the function "pick_visualization" below:
@@ -93,6 +94,7 @@ def pick_visualization(average):
     else:
         print("Error in pick_visualization: incorrect option picked")
         exit()
+    
 
 
 # ---------------------------------------
