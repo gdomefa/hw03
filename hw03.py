@@ -1,5 +1,5 @@
 """
-Name: (put your name here)
+Name: (Gloria Domefa)
 Peers: (add any collaborators)
 References: (anything you checked to solve this)
 """
@@ -58,6 +58,7 @@ def pick_averaging_method():
     Any other input prints
     'Error in pick_averaging_method: incorrect option picked'.
     """
+    # ask for choice of standard average method
     user_choice = input("Pick 'a' for mean, 'b' for median, 'c' for mode: ")
     if user_choice == "a":
         print("picked: Mean")
@@ -83,7 +84,7 @@ def pick_visualization(average):
     Any other input prints
     'Error in pick_visualization: incorrect option picked'.
     """
-    
+    # prints average result in two different ways
     avg_type = input("Pick '1' for print average, or '2' for plot average: ")
     if avg_type == "1":
         print_list_and_average(average)
