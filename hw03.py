@@ -6,7 +6,7 @@ References: (anything you checked to solve this)
 
 # imported modules
 import statistics # let's us use mean, median, mode
-
+                # does the calculations for you
 # This is a global variable (seen by all local scopes)
 grades = [0,0,0,0,0] # initialized with five zeros
 
@@ -63,9 +63,11 @@ def pick_averaging_method():
     if user_choice == "a":
         print("picked: Mean")
         avg = statistics.mean(grades)
+    # avg is the middle number
     elif user_choice == "b":
         print("picked: Median")
         avg = statistics.median(grades)
+    # avg is the most repeated number
     elif user_choice == "c":
         print("picked: Mode")
         avg = statistics.mode(grades)
@@ -86,6 +88,7 @@ def pick_visualization(average):
     'Error in pick_visualization: incorrect option picked'.
     """
     # prints average result in two different ways
+    # Gets choice of average printing from the user
     avg_type = input("Pick '1' for print average, or '2' for plot average: ")
     if avg_type == "1":
         print_list_and_average(average)
